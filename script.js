@@ -105,8 +105,8 @@ function calculateShortTerm() {
     const IR = TV * AV;
     const Iexposure = ((C * IR * LE) / Wbody).toFixed(6);
     const EC = ((Iexposure * Wbody) / IR).toFixed(6);
-    const RQ = (EC / 0.015).toFixed(6);
-    const RQ2 = (EC / 0.035).toFixed(6);
+     const RQ = ((EC / 0.015)/ 1000).toFixed(6);
+    const RQ2 = ((EC / 0.035)/ 1000).toFixed(6);
     const P = (RQ * 100).toFixed(2);
     const P2 = (RQ2 * 100).toFixed(2);
 
